@@ -1,3 +1,7 @@
+provider "azurerm" {
+  version = "=2.7.0"
+  features {}
+}
 resource "azurerm_resource_group" "skexample" {
   name     = "example-resources"
   location = "West Europe"
