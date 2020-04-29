@@ -46,7 +46,7 @@ resource "azurerm_sql_server" "LinktoIttest" {
   resource_group_name          = azurerm_resource_group.LinktoIt-RG-Terraform.name
   location                     = azurerm_resource_group.LinktoIt-RG-Terraform.location
   version                      = "12.0"
-  administrator_login          = "houssem"
+  administrator_login          = "kashidsh"
   administrator_login_password = "4-v3ry-53cr37-p455w0rd"
 }
 
