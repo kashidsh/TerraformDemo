@@ -37,7 +37,7 @@ resource "azurerm_app_service" "LinktoIt-AS-Terraform" {
   connection_string {
     name  = "Database"
     type  = "SQLServer"
-    value = "Server=tcp:${azurerm_sql_server.test.fully_qualified_domain_name} Database=${azurerm_sql_database.LinktoIttest.name};User ID=${azurerm_sql_server.test.administrator_login};Password=${azurerm_sql_server.test.administrator_login_password};Trusted_Connection=False;Encrypt=True;"
+    value = "Server=tcp:${azurerm_sql_server.LinktoIttest.fully_qualified_domain_name} Database=${azurerm_sql_database.LinktoIttest.name};User ID=${azurerm_sql_server.LinktoIttest.administrator_login};Password=${azurerm_sql_server.LinktoIttest.administrator_login_password};Trusted_Connection=False;Encrypt=True;"
   }
 }
 
